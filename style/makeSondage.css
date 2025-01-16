@@ -1,0 +1,146 @@
+h2 {
+    margin: auto;
+}
+
+
+
+
+.main-conteneur {
+    height: 550px;
+}
+
+
+
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 3.5rem;
+    margin-left: 18%;
+    row-gap: 20px;
+    column-gap: 3%;
+}
+.radio-option {
+    flex-basis: calc(48%);
+    display: flex;
+    align-items: center;
+}
+.radio-option input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #3498db;
+    border-radius: 50%;
+    outline: none;
+    margin-right: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.radio-option input[type="radio"]:checked {
+    background-color: green;
+    box-shadow: inset 0 0 0 4px white;
+}
+.radio-option label {
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.zone-text-explication {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    resize: none;
+    margin-top: 3rem;
+}
+
+
+
+.validate-btn {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 3.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.validate-btn:hover {
+    background-color: #005bb5;
+}
+
+
+.display-desktop { display: block; }
+.display-mobile { display: none; }
+
+
+
+
+
+
+
+
+@media (max-width: 1450px) {
+	.radio-option label {
+    font-size: 1.1rem;
+}
+}
+
+
+
+
+
+/*TELEPHONE + TABLETTE PORTRAIT */
+@media (max-width: 850px) {
+
+
+    .display-desktop { display: none; }
+    .display-mobile { display: block; }
+
+    
+
+
+    main { margin-top: 0em; }
+
+    .main-conteneur {
+        height: 465px;
+    }
+
+    .card {
+        padding: 20px 30px;
+    }
+
+    .radio-group {
+        margin-left: 10%;
+        row-gap: 20px;
+        column-gap: 4%;
+    }
+    .radio-option label {
+        font-size: 0.85rem;
+    }
+
+    .zone-text-explication {
+        height: 100px;
+        margin-top: 2rem;
+    }
+
+
+    .validate-btn {
+        font-size: 18px;
+        margin-top: auto;
+    }
+
+
+
+}

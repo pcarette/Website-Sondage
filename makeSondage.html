@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web sondage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/makeSondage.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="home.html"> <img src="assets/logo1.png" alt="Web sondage Logo" class="logo"> </a>
+            <button class="login-btn"><i class="fas fa-sign-in-alt"></i>Login</button>
+        </div>
+    </header>
+
+    
+    <svg class="display-desktop svgTitle" width="600" height="150">
+        <path id="ellipsePath" d="M 300,200 m -100,0 a 200,70 0 1,1 200,0 a 100,50 0 1,1 -200,0" fill="none" stroke="none"/>
+    
+        <text fill="black">
+            <textPath href="#ellipsePath" startOffset="15.5%"> WEB SONDAGE </textPath>
+        </text>
+    </svg>
+
+    <svg class="display-mobile svgTitle" viewBox="0 0 400 100" width="91%" height="auto">
+        <path id="ellipsePath2" d="M 20,100 a 160,85 0 1,1 360,100" fill="none" stroke="none"/>
+    
+        <text fill="black">
+            <textPath href="#ellipsePath2" startOffset="0%"> WEB SONDAGE </textPath>
+        </text>
+    </svg>
+    
+
+    <h2>Participe aux sondages</h2>
+
+    <main>
+        <div class="main-conteneur">
+            <button onclick="scrollCards('left')" class="nav-button nav-button-left"><i class="fas fa-arrow-left"></i></button>
+            <div class="conteneur-cards">
+                <div class="card card1">
+                    <div class="card-section1">
+                        <h3 class="question">Quel est votre animal préféré ?</h3>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="option1" name="radioGroup" value="option1">
+                                <label for="option1">Chien</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="option2" name="radioGroup" value="option2">
+                                <label for="option2">Chat</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="option3" name="radioGroup" value="option3">
+                                <label for="option3">Lapin</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="option4" name="radioGroup" value="option4">
+                                <label for="option4">Serpent</label>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea placeholder="Expliquez votre choix..." class="zone-text-explication"></textarea>
+                    <button class="validate-btn">Valider</button>
+                </div>
+                <div class="card card2">
+                    <div class="card-section1">
+                        <h3 class="question">Quel est votre couleur préféré ?</h3>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="option1" name="radioGroup" value="option1">
+                                <label for="option1">Rouge</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="option2" name="radioGroup" value="option2">
+                                <label for="option2">Bleu</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="option3" name="radioGroup" value="option3">
+                                <label for="option3">Vert</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="option4" name="radioGroup" value="option4">
+                                <label for="option4">Jaune</label>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea placeholder="Expliquez votre choix..." class="zone-text-explication"></textarea>
+                    <button class="validate-btn">Valider</button>
+                </div>
+                <div class="card card3">
+                    <div class="card-section1">
+                        <h3 class="question">Quel est le meilleur plat ?</h3>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="option1" name="radioGroup" value="option1">
+                                <label for="option1">Burger frites</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="option2" name="radioGroup" value="option2">
+                                <label for="option2">Pizza</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="option3" name="radioGroup" value="option3">
+                                <label for="option3">Carbonnade</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="option4" name="radioGroup" value="option4">
+                                <label for="option4">Poulet frites</label>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea placeholder="Expliquez votre choix..." class="zone-text-explication"></textarea>
+                    <button class="validate-btn">Valider</button>
+                </div>
+            </div>
+            <button onclick="scrollCards('right')" class="nav-button nav-button-right"><i class="fas fa-arrow-right"></i></button>
+        </div> 
+    </main>
+
+    <footer>
+        <p>© 2025 Web sondage. Tous droits réservés.</p>
+        <div>
+            <a href="#">Politique de confidentialité</a> <a href="#">Conditions d'utilisation</a> <a href="#">Contact</a>
+        </div>
+    </footer>
+    <script src="script/scrollCards.js"></script>
+</body>
+</html>

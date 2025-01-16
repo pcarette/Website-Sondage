@@ -1,0 +1,91 @@
+.title-container {
+    margin-bottom: 3rem;
+}
+
+
+
+
+.fa-globe, .fa-icons {
+    margin-right: 11px;
+}
+
+
+
+.search-section {
+    margin-top: 5rem;
+    width: 100%;
+    max-width: 400px;
+}
+.search-title {
+    font-size: 1.2rem;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.search-container {
+    display: flex;
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.search-input {
+    flex-grow: 1;
+    padding: 0.75rem;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+.search-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.search-btn:hover {
+    background-color: #2563eb;
+}
+
+
+
+.under-main {
+    height: 80px;
+}
+
+
+
+.display-desktop { display: block; }
+.display-mobile { display: none; }
+
+
+
+
+
+
+
+
+
+
+/*TELEPHONE + TABLETTE PORTRAIT */
+@media (max-width: 830px) {
+
+    .svgTitle{
+        margin-top: 3.5rem;
+    }
+
+    main {
+        margin-top: 3em;
+    }
+    .under-main {
+        height: 100px;
+    }
+
+
+
+    .display-desktop {  display: none; }
+    .display-mobile {  display: block; }
+}
+
+

@@ -1,0 +1,378 @@
+.display-desktop {
+  display: block;
+}
+.display-mobile {
+  display: none;
+}
+
+
+h2 {
+    margin: auto;
+}
+
+
+
+
+.main-conteneur {
+  height: 670px;
+}
+
+
+
+
+
+
+
+.details-vote {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 325px;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Pour Firefox */
+    -ms-overflow-style: none; /* Pour Internet Explorer et Edge */
+}
+.details-vote h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+}
+.details-vote p {
+    text-align: left;
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+}
+.vote-item {
+    margin-bottom: 1.2rem;
+}
+.vote-item:hover .progress {
+    background-color: #1d4ed8;
+}
+.vote-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.vote-info p {
+    font-size: 1.1rem;
+    color: #4b5563;
+    margin: 0;
+}
+.vote-info span {
+    font-weight: 600;
+    color: #2563eb;
+}
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e2e8f0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.progress {
+    height: 100%;
+    background-color: #2563eb;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+
+.div-like-unlike {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-thumbs-up, .fa-thumbs-down {
+    margin-right: 8px;
+}
+.like-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    width: 140px;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1.0rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.like-btn:hover {
+    background-color: lightgreen;
+}
+.unlike-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    width: 140px;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1.0rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.unlike-btn:hover {
+    background-color: #FFCCCB;
+}
+
+
+.comments-icone {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    /* background-color: #0073e6; */
+    color: black;
+    border: none;
+    border-radius: 45%;
+    text-align: center;
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+}
+.fa-circle-chevron-down {
+    margin-bottom: -0.5rem;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+
+
+
+.responses-card {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, white, #f1f5f9);
+    padding: 1.5rem !important;
+    margin-top: 2rem !important;
+    border: 2px solid black;
+    border-color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    width: 700px;
+    height: auto;
+    text-align: center;
+}
+
+.response-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+  
+.new-comment-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.new-comment-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.responses-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.response-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  transition: background-color 0.2s;
+}
+
+.response-item:hover {
+  background-color: #f1f5f9;
+}
+
+.response-user {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.user-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #2563eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.timestamp {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.response-content {
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.response-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  color: #6b7280;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.action-btn:hover {
+  color: #2563eb;
+  background-color: #eff6ff;
+}
+
+.response-footer {
+  margin: auto;
+  margin-top: 2rem;
+}
+
+
+
+
+
+
+@media (max-width: 1650px) {
+  .details-vote {
+    height: 280px;
+    padding: 1rem;
+}
+}
+@media (max-width: 1150px) {
+  .details-vote {
+    height: 270px;
+    padding: 1rem;
+}
+}
+
+
+
+
+
+
+/*TELEPHONE + TABLETTE PORTRAIT */
+@media (max-width: 850px) {
+
+
+  .display-desktop { display: none; }
+  .display-mobile { display: block; }
+
+  
+
+
+  main { margin-top: 0em; }
+
+  .main-conteneur {
+      height: 580px;
+  }
+  
+  .card {
+      padding: 20px 15px;
+  }
+
+  .details-vote {
+    height: 185px;
+    padding: 1rem;
+  }
+  .details-vote h5 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: #1f2937;
+  }
+  .details-vote p {
+      text-align: left;
+      font-size: 1.2rem;
+      margin-top: 0.2rem;
+  }
+
+  .like-btn {
+    width: 120px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .like-btn:hover {
+    background-color: lightgreen;
+  }
+  .unlike-btn {
+    width: 120px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 1.0rem;
+  }
+
+
+
+  .responses-card {
+    width: 99%;
+    height: auto;
+    text-align: center;
+  }
+
+
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web sondage</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="style/sondageVrac.css"/>
+  </head>
+
+  
+  <body>
+    <header>
+      <div class="container">
+        <a href="home.html">
+          <img src="assets/logo1.png" alt="Web sondage Logo" class="logo" />
+        </a>
+        <button class="login-btn">
+          <i class="fas fa-sign-in-alt"></i>Login
+        </button>
+      </div>
+    </header>
+
+    <svg class="display-desktop svgTitle" width="600" height="150">
+      <!-- Définir un chemin en cercle -->
+      <path id="ellipsePath" d="M 300,200 m -100,0 a 200,70 0 1,1 200,0 a 100,50 0 1,1 -200,0" fill="none" stroke="none" />
+
+      <text font-size="20" fill="black">
+        <textPath href="#ellipsePath" startOffset="15.5%">WEB SONDAGE</textPath>
+      </text>
+    </svg>
+	<svg class="display-mobile svgTitle" viewBox="0 0 400 100" width="91%" height="auto">
+        <path id="ellipsePath2" d="M 20,100 a 160,85 0 1,1 360,100" fill="none" stroke="none"/>
+    
+        <text fill="black">
+            <textPath href="#ellipsePath2" startOffset="0%"> WEB SONDAGE </textPath>
+        </text>
+    </svg>
+    <h2>Sondages en vrac</h2>
+
+    <main>
+      <div class="main-conteneur">
+        <button onclick="scrollCards('left')" class="nav-button nav-button-left"><i class="fas fa-arrow-left"></i></button>
+        <div class="conteneur-cards">
+			<div class="card card1">
+			  <div class="card-section1">
+				<h3>Quel est votre série préféré ?</h3>
+				<h4> La série Breaking Bad remporte le sondage avec 20% des votes! </h4>
+				<div class="details-vote">
+				  <h5>Détail des votes:</h5>
+				  <div class="vote-item">
+					<div class="vote-info">
+					  <p>1. Breaking Bad</p>
+					  <span>20%</span>
+					</div>
+					<div class="progress-bar">
+					  <div class="progress" style="width: 20%"></div>
+					</div>
+				  </div>
+				  <div class="vote-item">
+					<div class="vote-info">
+					  <p>2. Viking</p>
+					  <span>14%</span>
+					</div>
+					<div class="progress-bar">
+					  <div class="progress" style="width: 14%"></div>
+					</div>
+				  </div>
+				  <div class="vote-item">
+					<div class="vote-info">
+					  <p>3. Les Simpson</p>
+					  <span>8%</span>
+					</div>
+					<div class="progress-bar">
+					  <div class="progress" style="width: 8%"></div>
+					</div>
+				  </div>
+				  <div class="vote-item">
+					<div class="vote-info">
+					  <p>4. Squid Game</p>
+					  <span>6%</span>
+					</div>
+					<div class="progress-bar">
+					  <div class="progress" style="width: 6%"></div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="div-like-unlike">
+				<button class="like-btn"> <i class="fa-solid fa-thumbs-up"></i>Like </button>
+				<button class="unlike-btn"> <i class="fa-solid fa-thumbs-down"></i>Unlike </button>
+			  </div>
+			  <div class="comments-icone">
+				<div class="comment"><h6>Commentaires</h6></div>
+				<i style="cursor: pointer" onclick="displayResponses(responses)" class="fa-solid fa-circle-chevron-down"></i>
+			  </div>
+			</div>
+			<div class="card card2">
+			  <div class="card-section1">
+				<h3>Quelle saison préférez vous? ?</h3>
+				<h4> L'été est la saison la plus apprécié, avec 35 % des votes! </h4>
+				<div class="details-vote">
+				  <h5>Détail des votes:</h5>
+				  <div class="vote-item">
+					<div class="vote-info">
+					  <p>1. Eté</p>
+					  <span>35%</span>
+					</div>
+					<div class="progress-bar">
+					  <div class="progress" style="width: 20%"></div>
+					</div>
+				  </div>
+				  <div class="vote-item">
+					<div class="vote-info">
+					  <p>2. Printemps</p>
+					  <span>25%</span>
+					</div>
+					<div class="progress-bar">
+					  <div class="progress" style="width: 14%"></div>
+					</div>
+				  </div>
+				  <div class="vote-item">
+					<div class="vote-info">
+					  <p>3. Hiver</p>
+					  <span>20%</span>
+					</div>
+					<div class="progress-bar">
+					  <div class="progress" style="width: 8%"></div>
+					</div>
+				  </div>
+				  <div class="vote-item">
+					<div class="vote-info">
+					  <p>4. Automne</p>
+					  <span>20%</span>
+					</div>
+					<div class="progress-bar">
+					  <div class="progress" style="width: 6%"></div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="div-like-unlike">
+				<button class="like-btn"> <i class="fa-solid fa-thumbs-up"></i>Like </button>
+				<button class="unlike-btn"> <i class="fa-solid fa-thumbs-down"></i>Unlike </button>
+			  </div>
+			  <div class="comment"><h6>Commentaires</h6></div>
+			  <i style="cursor: pointer" onclick="displayResponses(responses)" class="fa-solid fa-circle-chevron-down"></i>
+			</div>
+			<div class="card card3">
+			  <div class="card-section1">
+				<h3>Quel est votre jeu vidéo préféré?</h3>
+				<h4> Le jeu Fortnite remporte le sondage avec 20% des votes </h4>
+				<div class="details-vote">
+				  <h5>Détail des votes:</h5>
+				  <div class="vote-item">
+					<div class="vote-info">
+					  <p>1. Fortnite</p>
+					  <span>20%</span>
+					</div>
+					<div class="progress-bar">
+					  <div class="progress" style="width: 20%"></div>
+					</div>
+				  </div>
+				  <div class="vote-item">
+					<div class="vote-info">
+					  <p>2. Pokemon</p>
+					  <span>14%</span>
+					</div>
+					<div class="progress-bar">
+					  <div class="progress" style="width: 14%"></div>
+					</div>
+				  </div>
+				  <div class="vote-item">
+					<div class="vote-info">
+					  <p>3. Call of Duty</p>
+					  <span>8%</span>
+					</div>
+					<div class="progress-bar">
+					  <div class="progress" style="width: 8%"></div>
+					</div>
+				  </div>
+				  <div class="vote-item">
+					<div class="vote-info">
+					  <p>4. Minecraft</p>
+					  <span>6%</span>
+					</div>
+					<div class="progress-bar">
+					  <div class="progress" style="width: 6%"></div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="div-like-unlike">
+				<button class="like-btn"> <i class="fa-solid fa-thumbs-up"></i>Like </button>
+				<button class="unlike-btn"> <i class="fa-solid fa-thumbs-down"></i>Unlike </button>
+			  </div>
+			  <div class="comment"><h6>Commentaires</h6></div>
+			  <i style="cursor: pointer" onclick="displayResponses(responses)" class="fa-solid fa-circle-chevron-down"></i>
+			</div>
+		</div>
+        <button onclick="scrollCards('right')" class="nav-button nav-button-right"> <i class="fas fa-arrow-right"></i> </button>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 Web sondage. Tous droits réservés.</p>
+      <div>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Conditions d'utilisation</a> <a href="#">Contact</a>
+      </div>
+    </footer>
+    <script src="script/sondageVrac.js"></script>
+    <script src="script/scrollCards.js"></script>
+  </body>
+</html>

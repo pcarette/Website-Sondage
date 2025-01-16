@@ -1,0 +1,39 @@
+.under-main {
+    height: 105px;
+}
+
+
+
+
+.fa-clipboard-list, .fa-user-plus {
+    margin-right: 8px;
+}
+
+
+.display-desktop { display: block; }
+.display-mobile { display: none; }
+
+
+
+
+
+
+/*TELEPHONE + TABLETTE PORTRAIT */
+@media (max-width: 830px) {
+
+    .svgTitle{
+        margin-top: 3.5rem;
+    }
+
+    main {
+        margin-top: 3em;
+    }
+    .under-main {
+        height: 100px;
+    }
+
+
+    .display-desktop { display: none; }
+    .display-mobile { display: block; }
+}
+
