@@ -48,7 +48,7 @@ function scrolling(side) {
         return matrix.m41;
     }
     
-	const cartes = document.querySelectorAll('.card');
+	const cartes = document.querySelectorAll('.card-movement-x');
 	if ( side == 'left' && actualCard > 0 ) {
             actualCard -= 1;
             cartes.forEach(function(carte) {

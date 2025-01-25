@@ -128,6 +128,7 @@ main {
     justify-content: center;
     padding: 3rem 1rem;
     margin-top: 0rem;
+    overflow-x: hidden;
 }
 
 
@@ -229,8 +230,18 @@ main {
 
 
 /* CARDS */
-.card {
+.card-movement-x {
 	position: absolute;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+.card-movement-x1 { transform: translateX(0%); }
+.card-movement-x2 { transform: translateX(2500px); }
+.card-movement-x3 { transform: translateX(5000px); }
+.card {
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to bottom right, white, #f1f5f9);
@@ -248,9 +259,6 @@ main {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre plus intense au survol */
     transform: translateY(-5px); /* Effet de levée au survol */
 }
-.card1 { transform: translateX(0%); }
-.card2 { transform: translateX(2500px); }
-.card3 { transform: translateX(5000px); }
 .card-section1 {
     padding: 20px;
 }
